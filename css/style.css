@@ -3,10 +3,10 @@
 
 @font-face {
   font-family: "Asteratty";
-  src: url("/assets/Asteratty.ttf");
+  src: url("/css/assets/Asteratty.ttf");
 
   font-family: "Louis George Cafe";
-  src: url("/assets/fonts/Louis\ George\ Cafe.ttf");
+  src: url("/css/assets/fonts/Louis\ George\ Cafe.ttf");
 }
 
 html {
