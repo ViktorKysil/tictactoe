@@ -3,10 +3,10 @@
 
 @font-face {
   font-family: "Asteratty";
-  src: url("/css/assets/Asteratty.ttf");
+  src: url("/assets/Asteratty.ttf");
 
   font-family: "Louis George Cafe";
-  src: url("/css/assets/fonts/Louis\ George\ Cafe.ttf");
+  src: url("/assets/fonts/Louis George Cafe.ttf");
 }
 
 html {
@@ -222,7 +222,7 @@ h1::before {
 #bnw {
   color: rgb(107, 107, 107);
   font-family: "Asteratty";
-  background-image: url("/assets/NSwitch_PaperMarioTheOrigamiKing_Overview_Beautiful_Headline_PaperBG.jpg");
+  background-image: url("/assets/images/NSwitch_PaperMarioTheOrigamiKing_Overview_Beautiful_Headline_PaperBG.jpg");
   background-size: cover;
   height: 50px;
   display: flex;
@@ -232,7 +232,7 @@ h1::before {
 #cnsl {
   color: white;
   font-family: monospace;
-  background-image: url("/assets/1.jpg");
+  background-image: url("/assets/images/console.jpg");
   background-size: cover;
   height: 50px;
   display: flex;
