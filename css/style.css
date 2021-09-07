@@ -4,10 +4,14 @@
 @font-face {
   font-family: "Asteratty";
   src: url("/assets/Asteratty.ttf");
+
+  font-family: "Louis George Cafe";
+  src: url("/assets/fonts/Louis\ George\ Cafe.ttf");
 }
 
 html {
   background-color: rgb(35, 36, 48);
+  background-image: none;
   font-family: sans-serif;
   /* zoom: 130%; */
 }
@@ -17,7 +21,15 @@ h1 {
   font-size: 40px;
   color: whitesmoke;
   font-weight: lighter;
-  font-family: sans-serif;
+  font-family: 'Louis George Cafe'
+}
+
+h1::after {
+  content: '';
+}
+
+h1::before {
+  content: '';
 }
 
 /* 3*3 Grid */
@@ -41,7 +53,7 @@ h1 {
   cursor: pointer;
   font-size: 50px;
   font-weight: bold;
-  font-family: "Lato", sans-serif;
+  font-family: 'Louis George Cafe';
   color: #293947;
 }
 
@@ -75,12 +87,20 @@ h1 {
   border: none;
   width: 240px;
   height: 40px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Louis George Cafe';
   background-color: dodgerblue;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+#but::after, #but-theme::after {
+  content: '';
+}
+
+#but::before, #but-theme::before {
+  content: '';
 }
 
 #but:nth-child(2) {
@@ -95,7 +115,7 @@ h1 {
 /* Player turn space */
 #plr1,
 #plr2 {
-  font-family: "Lato", sans-serif;
+  font-family: 'Louis George Cafe';
   color: whitesmoke;
   font-size: 20px;
   width: 100px;
@@ -116,7 +136,7 @@ h1 {
 }
 
 #trn {
-  font-family: "Lato", sans-serif;
+  font-family: 'Louis George Cafe';
   color: whitesmoke;
   font-size: 20px;
   width: 240px;
@@ -134,13 +154,6 @@ h1 {
   text-align: center;
 }
 
-/* Game Instruction Text */
-#ins {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: dodgerblue;
-  font-size: 17px;
-}
-
 .btns {
   display: flex;
   flex-direction: column;
@@ -150,6 +163,7 @@ h1 {
 #credits {
   color: white;
   margin-top: 20px;
+  font-family: 'Louis George Cafe';
 }
 
 #overlay {
@@ -179,12 +193,14 @@ h1 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   position: absolute;
+  font-family: 'Louis George Cafe';
 }
 
 .theme-selector {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  font-family: 'Louis George Cafe';
 }
 
 #def {

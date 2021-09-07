@@ -1,5 +1,6 @@
 var turns = 0;
 
+
 // Function called whenever user tab on any box
 function myfunc() {
 
@@ -547,32 +548,75 @@ function hideOverlay() {
     document.getElementById("overlay").style.display = "none";
 }
 
-function theme() {
-    if (localStorage.getItem('theme', '2')) {
+function lightTheme() {
+    document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"css/light.css\" />");
+}
 
-        document.getElementById("pagestyle").href="css/light.css";
-    }
-
-
-    if (localStorage.getItem('theme', '1')) {
-
-        document.getElementById("pagestyle").href="css/style.css";
-    }
-
-    
+function paperTheme() {
+    document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"css/paper.css\" />");
 }
 
 function defaultTheme() {
-   selected_theme = localStorage.setItem('theme', '1');
+    document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"css/style.css\" />");
 }
 
-function lightTheme() {
-   selected_theme = localStorage.setItem('theme', '2');
+function consoleTheme() {
+    document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"css/console.css\" />");
 }
 
-var selected_theme
 
-theme()
+// function theme() {
+//     document.querySelector("link[href='css/style.css']").href = selectedTheme;
+// }
+
+
+
+// function lightTheme() {
+//     // localStorage.clear
+//     selectedTheme = "css/light.css";
+//     Default_css = localStorage = (document.querySelector("link[href='css/style.css']").href = selectedTheme);
+    
+// }
+
+// function defaultTheme() {
+//     // localStorage.clear
+//     Default_css = localStorage = (document.querySelector("link[href='css/light.css']").href = selectedTheme);
+//     selectedTheme = "css/style.css";
+// }
+
+// var selectedTheme = localStorage
+// var Default_css 
+// var Light_css 
+// var Console_css; 
+// var Paper_css;
+
+
+// function theme() {
+//     if (localStorage.getItem('theme', '2')) {
+
+//         document.getElementById("pagestyle").href="css/light.css";
+//     }
+
+
+//     if (localStorage.getItem('theme', '1')) {
+
+//         document.getElementById("pagestyle").href="css/style.css";
+//     }
+
+    
+// }
+
+// function defaultTheme() {
+//    selected_theme = localStorage.setItem('theme', '1');
+// }
+
+// function lightTheme() {
+//    selected_theme = localStorage.setItem('theme', '2');
+// }
+
+// var selected_theme
+
+// theme()
 
 
 // window.onload=function(){
